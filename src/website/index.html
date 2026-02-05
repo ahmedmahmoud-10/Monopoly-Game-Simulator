@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Battleship Strategy Matchups</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <h1>⚓ Battleship Strategy Matchups</h1>
+
+  <div class="controls">
+    <button id="simulate-one">Simulate One Game</button>
+    <button id="simulate-ten">Simulate 10 Games</button>
+  </div>
+
+  <div class="stats">
+    <p id="games-played">Total Games Played: 0</p>
+    <p id="total-draws">Total Draws: 0</p>
+  </div>
+
+  <h2>🏅 Leaderboard</h2>
+  <table class="leaderboard-table">
+    <thead>
+    <tr>
+      <th>Strategy</th>
+      <th>Wins</th>
+      <th>Draws</th>
+    </tr>
+    </thead>
+    <tbody id="leaderboard-body"></tbody>
+  </table>
+
+  <h2>🧠 Game History</h2>
+  <div id="game-history" class="history-list"></div>
+
+  <h2>🎯 Latest Game Board</h2>
+  <div class="legend">
+    <div><span class="legend-color cell-p1-hit"></span> P1 Hit</div>
+    <div><span class="legend-color cell-p2-hit"></span> P2 Hit</div>
+    <div><span class="legend-color cell-miss"></span> Miss</div>
+    <div><span class="legend-color cell-empty"></span> Untouched</div>
+  </div>
+  <div id="latest-board" class="board-grid"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
